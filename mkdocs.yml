@@ -1,4 +1,5 @@
 site_name: SJSU Robotics Research Lab
+site_url: https://lphucthinh40.github.io/sample_mkdocs/
 theme:
   name: material
   logo: assets/sjsu-logo.png
