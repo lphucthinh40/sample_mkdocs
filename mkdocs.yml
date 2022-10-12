@@ -3,16 +3,47 @@ theme:
   name: material
   logo: assets/sjsu-logo.png
   palette:
-    primary: indigo
-    accent: indigo
+        # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+
+
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
   features:
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+    - "About Us": 'about.md'
+    - Projects:
+        - SambotRL:
+            - Resources:
+                - "SSH into Sambot": 'projects/sambotrl/resources/how-to-ssh.md'
+    - Platforms:
+        - Optitrack:
+            - Overview: 'platforms/Optitrack/overview.md'
+            - Installation: 'platforms/Optitrack/setup-guide.md'
+            - "State Estimation": 'platforms/Optitrack/localization.md'
+        - ROS:
+            - Overview: 'platforms/ROS/overview.md'
+            - Installation: 'platforms/ROS/installation.md'
+            - Cookbook: 'platforms/ROS/cookbook.md'
+    - Resources:
+        - 'Learning ROS': 'resources/learning-ros.md'
