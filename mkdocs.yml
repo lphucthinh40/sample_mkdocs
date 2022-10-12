@@ -35,9 +35,15 @@ nav:
     - "About Us": 'about.md'
     - Projects:
         - SambotRL:
-            - "SSH into Sambot": 'projects/sambotrl/resources/how-to-ssh.md'
+            - Resources: 'projects/sambotrl_resources.md'
     - Platforms:
-        - Optitrack: 'platforms/optitrack_overview.md'
-        - ROS: 'platforms/ros_overview.md'
+        - Optitrack:
+            - Overview: 'platforms/optitrack_overview.md'
+            - Installation: 'platforms/optitrack_installation.md'
+            - "Usage Guide": 'platforms/optitrack_localization.md'
+        - ROS: 
+            - Overview: 'platforms/ros_overview.md'
+            - Installation: 'platforms/ros_installation.md'
+            - Cookbook: 'platforms/ros_cookbook.md'
     - Resources:
         - 'Learning ROS': 'resources/learning-ros.md'
